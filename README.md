@@ -8,6 +8,7 @@ Crea dos módulos en un proyecto Python (`calificaciones.py` y `calificaciones_t
 Se quiere ayudar a los alumnos de Fundamentos de Programación a calcular la nota de sus cuestionarios de teoría. Como estos alumnos estudian Python, se quieren implementar funciones que permitan hacer este cálculo. Para resolver un problema, antes hay que entenderlo, así que, antes de implementar los apartados siguientes, vamos a explicar el problema a resolver.
 
 Un cuestionario de teoría está compuesto por 10 preguntas. Cada pregunta tiene asociadas 5 posibles respuestas, que se enumeran desde la a) hasta la e). Las preguntas son de respuesta múltiple. Lo que implica que puede haber una respuesta correcta, dos, tres, cuatro o, incluso cinco. Una vez que el alumno lee una pregunta, tiene que trasladar sus respuestas a una cuadrícula que aparece en la primera página del cuestionario, similar a la que puedes ver en la imagen que se muestra a continuación. Esta imagen se corresponde con las respuestas que la alumna Ada Byron marcó en el primer cuestionario de la asignatura. Fíjate que Ada marcó como respuestas correctas a la pregunta 1 las opciones a), b) y e). Además, una vez que Ada terminó su cuestionario, contó el número de casillas que había marcado con una X, y puso ese número en la casilla situada a la derecha de la celda Número total de casillas marcadas. Como puedes comprobar, Ada creía que en el cuestionario había 26 respuestas correctas.
+prueba de git
 
 ![image](https://user-images.githubusercontent.com/72299672/135712707-e0898f87-d3fd-40b6-bb10-450d93e59139.png)
 
