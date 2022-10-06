@@ -19,18 +19,19 @@ El dataset está compuesto por \<10\> columnas, con la siguiente descripción:
 * **\<columna 2>**: de tipo \<str\>, representa el título de las series
 * **\<columna 3>**: de tipo \<int\>, representa el año de estreno de las series
 * **\<columna 4>**: de tipo \<str\>, representa la edad permitida para ver las series seguido de un signo +
-* **\<columna 5>**: de tipo \<float\>, representa la valoración de Rotten Tomatos
-* **\<columna 6>**: de tipo \<int\>, representa la valoración de Netflix
-* **\<columna 7>**: de tipo \<int\>, representa si la serie está en Hulu
-* **\<columna 8>**: de tipo \<int\>, representa si la serie está en Prime Video
-* **\<columna 9>**: de tipo \<int\>, representa si la serie está en Disney+
-* **\<columna 10>**: de tipo \<int\>, representa la fecha de salida de la serie
+* **\<columna 5>**: de tipo \<float>, representa la valoración de IMDB
+* **\<columna 6>**: de tipo \<int\>, representa la valoración de Rotten Tomatos
+* **\<columna 7>**: de tipo \<bool\>, representa la valoración de Netflix
+* **\<columna 8>**: de tipo \<bool\>, representa si la serie está en Hulu
+* **\<columna 9>**: de tipo \<bool\>, representa si la serie está en Prime Video
+* **\<columna 10>**: de tipo \<date\>, representa la fecha de salida de la serie
 
 ## Tipos implementados
 
 Es una namedtuple denominada "Series" que posee como elementos cada una de las columnas
 
 ## Funciones implementadas
+lectura_fichero(fichero): Lee el fichero
 
 lectura_ficheros(fichero)
 
