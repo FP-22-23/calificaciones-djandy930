@@ -31,9 +31,6 @@ El dataset está compuesto por \<10\> columnas, con la siguiente descripción:
 Es una namedtuple denominada "Series" que posee como elementos cada una de las columnas
 
 ## Funciones implementadas
-lectura_fichero(fichero): Lee el fichero
-
-lectura_ficheros(fichero)
 
 ### \<principal\>
 
@@ -41,5 +38,5 @@ lectura_ficheros(fichero)
 
 ### \<test\>
 
-* **<test_lectura(fichero)>**: El test que realiza la lectura del fichero.
-* 
+* **<test_lectura(fichero)>**: El test que realiza la lectura del fichero. Te muestra el número de series que hay y te dice las tres primeras y tres últimas series
+*
