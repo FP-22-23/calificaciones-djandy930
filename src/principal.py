@@ -31,3 +31,39 @@ def lectura_fichero(fichero):
                 parsear_float(imdb), int(rotten_tomatoes), parsear_bool(netflix), 
                 parsear_bool(hulu), parsear_bool(prime_video), datetime.strptime(fecha_salida, '%d-%m-%y').date())))
     return result
+
+def esta_en_hulu(lista_series):
+    result=[]
+    for tupla in lista_series:
+        if tupla.hulu == True:
+            result.append(tupla.title)
+    return result
+    #return [tupla.title for tupla in lista_series if tupla.hulu==True]
+
+def existe_serie_antes_de(lista_series, anyo):
+    result=False
+    for tupla in lista_series:
+        if tupla.year < anyo:
+            result = True
+    return result
+    
+
+def maximo_imdb(lista_series):
+    result = []
+    for tupla in lista_series:
+        result.append(tupla.imdb)
+    return max(result)
+
+
+def series_mas_valoracion_imdb(lista_series):
+    result = []
+    for tupla in lista_series:
+        if tupla.imdb == maximo_imdb(lista_series):
+            result.append(tupla)
+    return result
+    #return [tupla for tupla in lista_series if tupla.imdb == maximo_imdb(lista_series)]
+
+def valoracion_series_ordenadas(lista_series, n):
+    return sorted([tupla for tupla in lista_series if tupla.netflix], reverse=True, key= lambda n:n[5])[:n]
+        
+
