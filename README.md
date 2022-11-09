@@ -34,7 +34,10 @@ Es una namedtuple denominada "Series" que posee como elementos cada una de las c
 
 ### \<principal\>
 
-* **<lectura_ficheros(fichero)>**: Una  función  que  lea  el  fichero  y  devuelva  una lista  de  tuplas  con  la información que contiene.
+* **<lectura_ficheros(fichero)>**: Una  función  que  lea  el  fichero  y  devuelva  una lista  de  tuplas  con  la información que contiene
+* **<esta_en_hulu(lista_series)>**: Te muestra todas las series que están en Hulu
+* **<existe_serie_antes_de(lista_series, anyo)>**: Si existe una serie que salió antes que el año que le pasamos, la función te devuelve "True"
+* **<maximo_imdb(lista_series)>**: Te devuelve la nota máxima de todas las series de IMDB
 
 ### \<test\>
 
