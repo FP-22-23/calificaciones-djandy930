@@ -19,6 +19,15 @@ def test_series_mas_valoracion_imdb(fichero):
 def test_valoracion_series_ordenadas(fichero):
     print("Listado de 5 series con más valoración rotten tomatoes que están en netflix:", valoracion_series_ordenadas(fichero, 5))
 
+def test_dicc_series_por_anyo(fichero):
+    print("Peliculas por año:", dicc_series_por_anyo(fichero))
+
+def test_max_series_anyo(fichero):
+    print("El año que mas series salieron fue:", max_series_anyo(fichero)[0])
+
+def test_dicc_porcentaje_series_anyo(fichero):
+    print("El porcentaje de series por año es:", dicc_porcentaje_series_anyo(fichero))
+
 
 if __name__=='__main__':
     series = lectura_fichero('data/fichero.csv')
@@ -32,4 +41,9 @@ if __name__=='__main__':
     test_series_mas_valoracion_imdb(series)
     print("-----------------------------------------------------------------------------------------------------------------------------------------")
     test_valoracion_series_ordenadas(series)
-    
+    print("-----------------------------------------------------------------------------------------------------------------------------------------")
+    test_dicc_series_por_anyo(series)
+    print("-----------------------------------------------------------------------------------------------------------------------------------------")
+    test_max_series_anyo(series)
+    print("-----------------------------------------------------------------------------------------------------------------------------------------")
+    test_dicc_porcentaje_series_anyo(series)
