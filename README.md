@@ -34,9 +34,17 @@ Es una namedtuple denominada "Series" que posee como elementos cada una de las c
 
 ### \<principal\>
 
-* **<lectura_ficheros(fichero)>**: Una  función  que  lea  el  fichero  y  devuelva  una lista  de  tuplas  con  la información que contiene.
+* **<lectura_ficheros(fichero)>**: Una  función  que  lea  el  fichero  y  devuelva  una lista  de  tuplas  con  la información que contiene
+* **<esta_en_hulu(lista_series)>**: Te muestra todas las series que están en Hulu
+* **<existe_serie_antes_de(lista_series, anyo)>**: Si existe una serie que salió antes que el año que le pasamos, la función te devuelve "True"
+* **<maximo_imdb(lista_series)>**: Te devuelve la nota máxima de todas las series de IMDB
+* **<series_mas_valoracion_imdb(lista_series)>**: Te devuelve la serie o series que tienen la nota más alta
+* **<valoracion_series_ordenadas(lista_series, n)>**: Te devuelve las n series más valoradas ordenadas por rotten_tomatoes y que están en Netflix
 
 ### \<test\>
 
 * **<test_lectura(fichero)>**: El test que realiza la lectura del fichero. Te muestra el número de series que hay y te dice las tres primeras y tres últimas series
-*
+* **<test_esta_en_hulu(fichero)>**: El test que te muestra la lista de las series que están en Hulu
+* **<test_existe_serie_antes_de(fichero)>**: El test que te muestra con True o False si había una serie anterior a un año que le pasamos
+* **<test_series_mas_valoracion_imdb(fichero)>**: El test que te muestra las series mejor valoradas de IMDB
+* **<test_valoracion_series_ordenadas(fichero)>**: El test que te devuelve las n series más valoradas que están ordenadas por rotten_tomatos y que están en Netflix
